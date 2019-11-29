@@ -1,17 +1,16 @@
 import React, { FC } from 'react';
-import { Matrix } from './components/Matrix';
 import styled from '@emotion/styled';
+import { TickContainer } from './components/TickContainer';
 
 export const App: FC = () => {
     const AppContainer = styled.div`
         height: 100%;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
     `;
     return (
         <AppContainer>
-            <Matrix />
+            <TickContainer />
         </AppContainer>
     );
 };
